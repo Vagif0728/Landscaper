@@ -1,0 +1,27 @@
+﻿@model LoginVM
+
+<div class="col-md-6 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Login</h4>
+
+            <form method="post" class="forms-sample" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label asp-for="UsernameOrEmail" for="exampleInputUsername1">UsernameOrEmail</label>
+                    <input asp-for="UsernameOrEmail" class="form-control" >
+                </div>
+                <div class="form-group">
+                    <label asp-for="Password" for="exampleInputEmail1">Password</label>
+                    <input asp-for="Password" class="form-control"  placeholder="Paswword">
+                </div>
+                <div class="form-group">
+                    <label asp-for="IsRememberedMe" >Isrememberedme</label>
+                    <input asp-for="IsRememberedMe" class="form-control">
+                </div>
+
+                <button type="submit" class="btn btn-primary me-2">Login</button>
+               
+            </form>
+        </div>
+    </div>
+</div>
